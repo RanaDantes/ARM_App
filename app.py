@@ -42,11 +42,20 @@ def upload():
         filename = secure_filename(file.filename)
 
         # ✅ Use /tmp in production (like Render)
-        upload_dir = '/tmp'
+        import tempfile
+
+        # Use a temporary directory that works across all OS
+        upload_dir = tempfile.gettempdir()
         filepath = os.path.join(upload_dir, filename)
 
-        # ✅ Save file
         file.save(filepath)
+
+        # # ✅ Use /tmp in production (like Render)
+        # upload_dir = '/tmp'
+        # filepath = os.path.join(upload_dir, filename)
+
+        # # ✅ Save file
+        # file.save(filepath)
 
         # ✅ Run mining
         rules = run_association_rule_mining(filepath, min_support, min_confidence, min_threshold)
