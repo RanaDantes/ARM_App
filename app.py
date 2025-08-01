@@ -56,6 +56,11 @@ def upload():
 
     return "Invalid file format. Please upload a CSV."
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
 from flask import send_from_directory
 
 @app.route('/download-sample')

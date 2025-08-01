@@ -1,0 +1,53 @@
+<!-- templates/about.html -->
+{% extends "base.html" %}
+
+{% block title %}About - AprioriApp{% endblock %}
+
+{% block content %}
+<div class="py-4 container">
+    <h1 class="mb-4">About This Project</h1>
+
+    <section class="mb-5 text-center">
+        <h4>Acknowledgement</h4>
+        <p>We would like to express our gratitude to our instructor and mentors who guided us through the development of this project.</p>
+    </section>
+
+    <section class="mb-5 text-center">
+        <h4>School</h4>
+        <p>University of Science and Technology of Southern Philippines (USTP)</p>
+        <img src="{{ url_for('static', filename='images/ustp-logo.png') }}" alt="USTP Logo" style="max-width: 200px;" class="mt-2">
+    </section>
+
+    <section class="mb-5 text-center">
+        <h4>Department</h4>
+        <p>College of Information Technology and Computing (CITC)</p>
+        <img src="{{ url_for('static', filename='images/citc-logo.png') }}" alt="CITC Logo" style="max-width: 200px;" class="mt-2">
+    </section>
+
+    <section class="mb-5 text-center">
+        <h4>Group Members</h4>
+        <ul class="list-unstyled">
+            <li>Rachel Ana Dantes</li>
+            <li>Sheila Berbania</li>
+            <li>Arsenio Quibedo</li>
+        </ul>
+    </section>
+
+    <section class="mb-5 text-center">
+        <h4>Technologies Used</h4>
+        <ul class="list-unstyled">
+            <li>Python (Flask)</li>
+            <li>Bootstrap 5</li>
+            <li>Apriori Algorithm</li>
+        </ul>
+    </section>
+
+    <section class="text-center">
+        <h4>Source Code</h4>
+        <p>
+            View this project on 
+            <a href="https://github.com/mit-adrian/ApprioApp" target="_blank">GitHub</a>.
+        </p>
+    </section>
+</div>
+{% endblock %}
