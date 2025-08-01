@@ -14,9 +14,36 @@
 <body class="d-flex flex-column vh-100">
     <!-- Navbar stays the same -->
          <!-- 🟦 Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <nav class="navbar navbar-expand-lg" style="background-color: #6366f1;">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold ms-4" href="/">Apriori Insights</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto me-4 gap-2 align-items-center">
+
+            <!-- <ul class="navbar-nav ms-auto"> -->
+                <li class="nav-item">
+                    <a class="nav-link nav-btn {% if request.endpoint == 'index' %}active{% endif %}" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn {% if request.endpoint == 'process' %}active{% endif %}" href="{{ url_for('process') }}">Process</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn {% if request.endpoint == 'results' %}active{% endif %}" href="{{ url_for('results') }}">Results</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn {% if request.endpoint == 'about' %}active{% endif %}" href="{{ url_for('about') }}">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Associate Rule Mining App</a>
+            <a class="navbar-brand" href="/">Apriori Insights</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,7 +65,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <div class="flex-grow-1 d-flex overflow-hidden">
 
@@ -63,11 +90,11 @@
         </div>
 
         <!-- GitHub Icon -->
-        <a href="https://github.com/mit-adrian/ApprioApp" target="_blank" class="text-white fs-4">
+        <a href="https://github.com/RanaDantes/ARM_App" target="_blank" class="text-white fs-4">
             <i class="bi bi-github"></i>
         </a><br>
 
-        <small>© 2025 EL103 Final PIT - USTP. All rights reserved.</small><br>
+        <small>© 2025 EL103 BI Final PIT - USTP. All Rights Reserved.</small><br>
     </footer>
 
 

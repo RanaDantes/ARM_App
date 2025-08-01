@@ -9,25 +9,54 @@
     <div>
         <!-- 📚 Introduction -->
         <section id="introduction">
-            <h1>What is ARM?</h1>
-            <p>
-                <strong>Associate Rule Mining (ARM)</strong> is a data mining technique used to uncover <strong>hidden patterns, correlations, and relationships</strong>
-                within large datasets. Its primary goal is to discover interesting <strong>if-then relationships</strong>, known as <strong>association rules</strong>, that
-                help describe how items or attributes co-occur in data. <br><br>
-                Originally popularized through <strong>market basket analysis</strong>, ARM helps answer questions like:
-                <blockquote class="fancy">
-                    <strong>|</strong>&nbsp;&nbsp;&nbsp;&nbsp;<q>If a customer buys item A, how likely are they to also buy item B?</q>
-                </blockquote>
-                The ARM process typically involves two keys steps:
-                <br>
-                1. <strong>Frequent Itemset Generation</strong> - Identifyng item combinations that occur together frequently above a minimum support threshold.
-                <br>
-                2. <strong>Rule Generation</strong> - Creating strong and valid rules from these itemsets based on metrics like <strong>support, confidece, and lift.</strong>
-                <br><br>
-                One of the most foundational algorithms used in ARM is the <strong>Apriori algorithm</strong>, which systematically reduces the search space using the principle
-                that <strong>all subsets of a frequent itemset must also be frequent.</strong> By translating raw data into understandable rules, ARM enables organizations to 
-                extract actionable insights and enhance strategic outcomes.
-            </p>
+            <h1 style="
+        color: #282727;
+        background-color: #e0e7ff;
+        border-left: 6px solid #6366F1;
+        padding-left: 10px;
+        padding-bottom: 7px;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+        margin-bottom: 1.5rem;
+    ">
+        What is ARM?
+    </h1>
+    <br>
+
+    <p style="line-height: 1.75; margin: 0 2rem; font-size: 18px;">
+        <strong>Association Rule Mining (ARM)</strong> is a data mining technique used to uncover 
+        <strong>hidden patterns or relationships</strong> between variables in large datasets, especially in transaction data.
+        It helps identify powerful <strong>if-then associations</strong>—also called <em>association rules</em>—that reveal how items co-occur in real-world data.
+    </p>
+
+    <blockquote class="fancy"> <strong>|</strong>&nbsp;&nbsp;&nbsp;&nbsp;<q>If a customer buys item A, how likely will he/she also buys item B?</q>
+    </blockquote> 
+
+    <p style="margin: 0 2rem; font-size: 18px;">
+        ARM is best known for <strong>market basket analysis</strong>, where businesses discover which items are often purchased together.
+        The process involves two main steps:
+    </p>
+    <br>
+    
+    <ol class="mb-4" style="margin: 0 2rem; font-size: 18px;">
+        <li><strong>Frequent Itemset Generation</strong> — Identifying item combinations that appear often above a support threshold.</li>
+        <li><strong>Rule Generation</strong> — Forming association rules based on metrics like <strong>support</strong>, <strong>confidence</strong>, and <strong>lift</strong>.</li>
+    </ol>
+
+    <p style="margin: 0 2rem; font-size: 18px;">
+        A key algorithm in ARM is <strong>Apriori</strong>, which smartly reduces the search space using the principle that 
+        <em>all subsets of a frequent itemset must also be frequent</em>.
+        By converting raw data into meaningful rules, ARM enables data-driven decision-making in business and research.
+    </p>
+
+    <div class="bg-white border rounded p-3 mt-4 shadow-sm">
+        <h6 class="text-primary mb-3">📌 Key Terms to Remember:</h6>
+        <ul class="mb-0" style="line-height: 1.7; font-size: 18px;">
+            <li><strong>Itemset</strong> — A group of items purchased together (e.g., {milk, bread})</li>
+            <li><strong>Support</strong> — How frequently the itemset appears in the dataset.</li>
+            <li><strong>Confidence</strong> — How often the “then” part is true when the “if” part is true.</li>
+            <li><strong>Lift</strong> — How much more likely the “then” item is bought compared to random chance. <em>(Lift > 1 means strong association)</em></li>
+        </ul>
+    </div>
         </section>
 
     </div>
@@ -35,9 +64,11 @@
     <hr style="margin: 3em auto; width: 100%; border: 0; border-top: 2px solid #282727;">
 
     <section id="video">
-        <h1>Watch: Apriori Explained</h1>
-    
-        <p>🧠 Apriori Algorithm – Market Basket Analysis</p>
+        <h1 style="color: #282727; background-color: #e0e7ff; border-left: 6px solid #6366F1; padding-left: 10px; padding-bottom: 7px; box-shadow: 2px 2px 6px rgba(0,0,0,0.1);">
+            How the App Works?
+        </h1>
+         <p style="margin: 0 2rem; font-size: 18px">🧠 Apriori Algorithm – Market Basket Analysis Explained</p>
+        <br><br>
 
         <!-- Video (centered + responsive) -->
         <div class="ratio ratio-16x9 mb-4">
@@ -50,24 +81,17 @@
 
     <hr style="margin: 3em auto; width: 100%; border: 0; border-top: 2px solid #282727;">
     <section id="how-it-works">
-        <h1>What makes ARM great?</h1>
+        <h1 style="color: #282727; background-color: #e0e7ff; border-left: 6px solid #6366F1; padding-left: 10px; padding-bottom: 7px; box-shadow: 2px 2px 6px rgba(0,0,0,0.1);">
+            What Makes ARM Great?
+        </h1>
 
-            <p>
-                <strong>Associate Rule Mining (ARM)</strong> is a data mining technique used to uncover <strong>hidden patterns, correlations, and relationships</strong>
-                within large datasets. Its primary goal is to discover interesting <strong>if-then relationships</strong>, known as <strong>association rules</strong>, that
-                help describe how items or attributes co-occur in data. <br><br>
-                Originally popularized through <strong>market basket analysis</strong>, ARM helps answer questions like:
-
-                The ARM process typically involves two keys steps:
-                <br>
-                1. <strong>Frequent Itemset Generation</strong> - Identifyng item combinations that occur together frequently above a minimum support threshold.
-                <br>
-                2. <strong>Rule Generation</strong> - Creating strong and valid rules from these itemsets based on metrics like <strong>support, confidece, and lift.</strong>
-                <br><br>
-                One of the most foundational algorithms used in ARM is the <strong>Apriori algorithm</strong>, which systematically reduces the search space using the principle
-                that <strong>all subsets of a frequent itemset must also be frequent.</strong> By translating raw data into understandable rules, ARM enables organizations to 
-                extract actionable insights and enhance strategic outcomes.
-            </p>
+         <br>
+        <p style="margin: 0 2rem; font-size: 18px;">
+           <strong>Association Rule Mining (ARM)</strong> , powered by the Apriori algorithm, is a powerful tool for uncovering meaningful patterns within transactional data. This application illustrates how ARM can identify frequent item combinations and generate insightful rules that reveal hidden relationships between products or attributes.
+        </p>
+        <br>
+        <p style="margin: 0 2rem; font-size: 18px;"> By transforming raw data into actionable knowledge, ARM <strong> enables smarter, data-driven decisions</strong> across various domains—be it retail, e-commerce, or analytics. Whether you're optimizing product placement, enhancing cross-selling strategies, or simply exploring patterns in your dataset, ARM provides a solid foundation for <strong>turning information into impact</strong>.</p>
+        <br><br>
     </section>
 
 

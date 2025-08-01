@@ -5,23 +5,51 @@
 
 {% block content %}
 <div class="py-4 container">
-    <h1 class="mb-4">About This Project</h1>
 
-    <section class="mb-5 text-center">
-        <h4>Acknowledgement</h4>
-        <p>We would like to express our gratitude to our instructor and mentors who guided us through the development of this project.</p>
-    </section>
-
-    <section class="mb-5 text-center">
-        <h4>School</h4>
-        <p>University of Science and Technology of Southern Philippines (USTP)</p>
+        <section class="mb-5 text-center">
+        <!-- <h4>School</h4> -->
+        <p style="font-size: 22px; font-weight: bold;"> University of Science and Technology of Southern Philippines (USTP)</p>
         <img src="{{ url_for('static', filename='images/ustp-logo.png') }}" alt="USTP Logo" style="max-width: 200px;" class="mt-2">
     </section>
+    <br>
 
     <section class="mb-5 text-center">
-        <h4>Department</h4>
-        <p>College of Information Technology and Computing (CITC)</p>
+        <!-- <h4>Department</h4> -->
+        <p style="font-size: 18px; font-weight: bold;">College of Information Technology and Computing (CITC)</p>
         <img src="{{ url_for('static', filename='images/citc-logo.png') }}" alt="CITC Logo" style="max-width: 200px;" class="mt-2">
+    </section>
+    <br> <br>
+    <h1 class="mb-4">About This Project</h1>
+
+    <section class="mb-5 text-justify">
+        <p style="font-size: 18px; line-height: 1.6; margin: 2rem">
+        <strong>Apriori Insights</strong> is a web-based application developed as part of the 
+        <strong>Performance Innovation Task (PIT)</strong> for the <strong>EL103 Business Intelligence</strong> course.
+        This project showcases the practical use of <strong>data mining</strong> techniques—particularly the 
+        <strong>Apriori algorithm</strong>—to uncover valuable patterns in transaction data through 
+        <strong>association rule mining</strong>.
+        </p>
+        <p style="font-size: 18px; line-height: 1.6; margin: 2rem">
+        The goal of this tool is to provide a lightweight and intuitive platform that allows users to 
+        upload transactional datasets, set mining parameters (such as <strong>minimum support</strong> 
+        and <strong>confidence thresholds</strong>), and receive immediate insights into purchasing behavior.
+        It highlights the role of <strong>Business Intelligence (BI)</strong> in translating raw data into
+        meaningful, actionable decisions—particularly in retail and e-commerce domains.
+        </p>
+        <p style="font-size: 18px; line-height: 1.6; margin: 2rem">
+        Beyond its academic purpose, <strong>Apriori Insights</strong> reflects a deeper understanding of how 
+        modern BI tools empower organizations to make data-informed strategies, streamline operations, 
+        and ultimately, drive performance through innovation.
+        </p>
+    </section>
+
+        <section class="mb-5 text-center">
+        <h4>Technologies Used</h4>
+        <ul class="list-unstyled">
+            <li>Python (Flask)</li>
+            <li>Bootstrap 5</li>
+            <li>Apriori Algorithm</li>
+        </ul>
     </section>
 
     <section class="mb-5 text-center">
@@ -33,20 +61,13 @@
         </ul>
     </section>
 
-    <section class="mb-5 text-center">
-        <h4>Technologies Used</h4>
-        <ul class="list-unstyled">
-            <li>Python (Flask)</li>
-            <li>Bootstrap 5</li>
-            <li>Apriori Algorithm</li>
-        </ul>
-    </section>
+
 
     <section class="text-center">
         <h4>Source Code</h4>
         <p>
             View this project on 
-            <a href="https://github.com/RanaDantes/ARM-App" target="_blank">GitHub</a>.
+            <a href="https://github.com/RanaDantes/ARM_App" target="_blank">GitHub</a>.
         </p>
     </section>
 </div>
